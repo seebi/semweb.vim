@@ -1,14 +1,16 @@
 " Vim syntax file
 " Language:     RDF Notation 3
-" Version:      1.0
+" Version:      1.1
 " SeeAlso:      <http://www.w3.org/DesignIssues/Notation3.html>
-" Maintainer:   Niklas Lindstr&ouml;m <nlm@valtech.se>
-" Updated:      2004-03-24
+" Maintainer:   Niklas Lindstrom <lindstream@gmail.com>
+" Created:      2004-03-24
+" Updated:      2006-01-12
 
 " TODO:
-"   * grouping e.g. statements to ebable folding, error checking etc.
 "   * string value specials
+"   * fix XML Literal syntax (triplequoutes PLUS ^^rdfs:XMLLiteral)
 "   * "@"-prefix of verbs (?)
+"   * grouping e.g. statements to ebable folding, error checking etc.
 
 
 if version < 600
@@ -19,11 +21,13 @@ endif
 
 
 syn keyword n3Verb              a has is of
-syn match   n3Separator         "[][;,)(}{.^!]"
-"syn match   n3StatementTail     "\."
+syn match   n3Separator         "[][;,)(}{^!]"
+syn match   n3EndStatement      "\."
 syn match   n3Declaration       "@keywords\|@prefix"
 syn match   n3Quantifier        "@forAll\|@forSome"
-syn match   n3LName             "\(:\?\)\@<=[a-zA-Z_][a-zA-Z0-9_]*"
+"syn match   n3LName             "\(:\?\)\@<=[a-zA-Z_][a-zA-Z0-9_]*"
+syn match   n3ClassName         "\(:\?\)\@<=[A-Z][a-zA-Z0-9_-]*"
+syn match   n3PropertyName      "\(:\?\)\@<=[a-z][a-zA-Z0-9_-]*"
 syn match   n3Prefix            "\([a-zA-Z_][a-zA-Z0-9_]*\)\?:"
 syn match   n3Comment           "#.*$" contains=n3Todo
 syn keyword n3Todo              TODO FIXME XXX contained
@@ -47,6 +51,7 @@ syn match n3Datatype +\("\s*\)\@<=^^+
 " TODO: then follows: explicituri | qname
 
 " XMLLiterals
+" FIXME: make this work regardless of if this script resides in runtime or .vim/syntax
 if filereadable(expand("<sfile>:p:h")."/xml.vim")
  unlet! b:current_syntax
  syn include @n3XMLLiteral <sfile>:p:h/xml.vim
@@ -69,9 +74,12 @@ if version >= 508 || !exists("did_n3_syn_inits")
   HiLink n3Quantifier           keyword
   HiLink n3Separator            Operator
   HiLink n3EndStatement         Special
+  "hi n3EndStatement gui=underline,bold " TODO: just remove?
   HiLink n3Declaration          PreCondit
   HiLink n3Prefix               Special
-  HiLink n3LName                Normal
+  "HiLink n3LName                Normal
+  HiLink n3ClassName            Type
+  HiLink n3PropertyName         Function
   HiLink n3Comment              Comment
   HiLink n3Todo                 Todo
   HiLink n3Deprecated           Error
