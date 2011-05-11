@@ -11,7 +11,12 @@ your bundle directory.
 
 ## namespace completion
 
-tbd
+You can use ctrl-x+u (autocomplete user function) for completing
+rdf prefixes (as `owl`, `skos` and `foaf`) to namespace URIs (e.g.
+`http://xmlns.com/foaf/0.1/` for the `foaf` prefix).
+
+This done with the multifunctional shell script [rdf.sh]() which is
+a dependency and must be available as `rdf` in the path.
 
 ## syntax highlightning
 
