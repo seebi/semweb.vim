@@ -15,4 +15,9 @@ tbd
 
 ## syntax highlightning
 
-tbd
+### N3 Syntax
+I just pull the syntax file from [Niklas Lindström](git://github.com/vim-scripts/n3.vim.git) here.
+
+### SPARQL Syntax
+I just pull the syntax file from [Jeroen Pulles](https://github.com/vim-scripts/sparql.vim) here.
+
