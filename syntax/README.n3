@@ -1,12 +1,16 @@
 This is a mirror of http://www.vim.org/scripts/script.php?script_id=944
 
-This is a syntax file to highlight Notation 3 documents for describing RDF (meta-)data.
+This is a syntax file to highlight Notation 3 documents for describing
+RDF (meta-)data.
 
-It handles basic highlighting, but has not currently any complex error detecting features (e.g. for non-closed statements etc), nor any fold regions defined.
+It handles basic highlighting, but has not currently any complex error
+detecting features (e.g. for non-closed statements etc), nor any fold
+regions defined.
 
 About Notation 3 (excerpt from: http://www.w3.org/DesignIssues/Notation3.html):
 
-"This is a langauge which is a compact and readable alternative to RDF's XML syntax, but also is extended to allow greater expressiveness."
+"This is a language which is a compact and readable alternative to RDF's
+XML syntax, but also is extended to allow greater expressiveness."
 
 That said, download this and see if it helps you in semantic endeavours.
 

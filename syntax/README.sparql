@@ -1,7 +1,11 @@
 This is a mirror of http://www.vim.org/scripts/script.php?script_id=1755
 
-This is a first stab at syntax highlighting for SPARQL; Very useful if you write SPARQL in, for example, rq files that you can use with the roqet command line query processor. 
+This is a first stab at syntax highlighting for SPARQL; Very useful if
+you write SPARQL in, for example, rq files that you can use with the
+roqet command line query processor.
 
-More information on SPARQL at http://www.w3.org/TR/rdf-sparql-query/. 
+More information on SPARQL at http://www.w3.org/TR/rdf-sparql-query/.
 
-You might find a more recent version at http://www.redslider.net/2007/2007-01-06-sparql-syntax-vim.html (check the last modified date in the script comment). 
+You might find a more recent version at
+http://www.redslider.net/2007/2007-01-06-sparql-syntax-vim.html (check
+the last modified date in the script comment).
