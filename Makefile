@@ -1,3 +1,10 @@
+#
+# This file is part of the semweb vim bundle for working with RDF knowledge bases
+#
+# Author:    Sebastian Tramp <http://sebastian.tramp.name>
+# Homepage:  http://github.com/seebi/semweb.vim
+# Copyright: Copyright (C) 2011 Sebastian Tramp
+# License:   http://opensource.org/licenses/gpl-3.0.html
 
 default:
 	@echo "targets:"

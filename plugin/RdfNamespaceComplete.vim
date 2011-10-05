@@ -1,4 +1,12 @@
+"
+" This file is part of the semweb vim bundle for working with RDF knowledge bases
+"
+" Author:    Sebastian Tramp <http://sebastian.tramp.name>
+" Homepage:  http://github.com/seebi/semweb.vim
+" Copyright: Copyright (C) 2011 Sebastian Tramp
+" License:   http://opensource.org/licenses/gpl-3.0.html
 
+" this function can be used to autocomplete a prefix
 function! RdfNamespaceComplete(findstart, base)
     if a:findstart
         " locate the start of the word
