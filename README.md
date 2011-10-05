@@ -6,8 +6,10 @@ This bundle is created to work with `pathogen` so just copy the folder into
 your bundle directory.
 
 ## Features
+
  * namespace completion
  * syntax highlightning
+ * insert xsd:dateTime current time literal with abbrevation `xsdnow`
 
 ## namespace completion
 
