@@ -3,7 +3,7 @@
 "
 " Author:    Sebastian Tramp <http://sebastian.tramp.name>
 " Homepage:  http://github.com/seebi/semweb.vim
-" Copyright: Copyright (C) 2011 Sebastian Tramp
+" Copyright: Copyright (C) 2012 Sebastian Tramp
 " License:   http://opensource.org/licenses/gpl-3.0.html
 
 " this function can be used to autocomplete a prefix
